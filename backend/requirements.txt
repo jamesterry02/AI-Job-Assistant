@@ -1,0 +1,32 @@
+# --- Web framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# --- Config / validation ---
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# --- Database ---
+sqlalchemy==2.0.36
+alembic==1.14.0
+psycopg[binary]==3.2.3
+pgvector==0.3.6
+
+# --- Auth ---
+pyjwt==2.10.1
+passlib[bcrypt]==1.7.4
+
+# --- AI ---
+openai==1.58.1
+
+# --- Resume processing ---
+pypdf==5.1.0
+
+# --- Storage (Azure, production) ---
+azure-storage-blob==12.24.0
+
+# --- Testing ---
+pytest==8.3.4
+pytest-asyncio==0.25.0
+httpx==0.28.1
