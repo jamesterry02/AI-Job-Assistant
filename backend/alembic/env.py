@@ -12,9 +12,7 @@ sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 from app.core.config import get_settings  # noqa: E402
 from app.db.base import Base  # noqa: E402
-
-# Importing model modules registers them on Base.metadata for autogenerate.
-# Added here as each model is created, e.g.: from app.models import user  # noqa: F401
+from app.db import base_models  # noqa: E402, F401  (registers all models on Base.metadata)
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
