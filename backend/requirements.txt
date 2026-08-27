@@ -6,6 +6,11 @@ uvicorn[standard]==0.34.0
 pydantic==2.10.4
 pydantic-settings==2.7.1
 
-# Additional packages (SQLAlchemy/Alembic, auth, OpenAI, pypdf, Azure Blob,
-# pytest, ...) are added to this file only when the feature that needs them
-# is actually built, not in advance.
+# --- Database ---
+sqlalchemy==2.0.36
+alembic==1.14.0
+psycopg[binary]==3.2.3
+
+# Additional packages (auth, OpenAI, pypdf, Azure Blob, pgvector, pytest, ...)
+# are added to this file only when the feature that needs them is actually
+# built, not in advance.
